@@ -64,7 +64,8 @@ public final class DateLabel: UILabel, DaySelectorItemProtocol {
       font = style.font
       textColor = today ? style.todayInactiveTextColor : notTodayColor
       backgroundColor = style.inactiveBackgroundColor
-    } if today, !selected {
+    }
+    if today, !selected {
         backgroundColor = UIColor(rgb: 0x0f2583)
     }
   }
